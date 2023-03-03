@@ -89,7 +89,17 @@
   font-weight: bold;
 }
 
+.mining {
+  animation: color-change 1s infinite;
+}
+
 /* KeyFrames */
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
+
 @-webkit-keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
