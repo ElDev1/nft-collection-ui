@@ -5,9 +5,9 @@ import { ethers } from 'ethers';
 import myNft from "./utils/abiContract/myNft.json"
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
-const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-//const OPENSEA_LINK = '';
+const TWITTER_HANDLE = 'deviAmaolo';
+const TWITTER_LINK = `https://twitter.com/deviAmaolo`;
+const OPENSEA_LINK = 'https://testnets.opensea.io/es/collection/squarenft-215';
 //const TOTAL_MINT_COUNT = 50;
 
 const CONTRACT_ADDRESS = "0x59c9662B171188CFEBBc2EDF9608b2381428483e";
@@ -28,6 +28,7 @@ const App = () => {
     const goerliChainId = "0x5"; 
     if (chainId !== goerliChainId) {
       alert("You are not connected to the Goerli Test Network!");
+      alert("Change to Goerli network in your ethereum wallet!")
 }
 
     if (!ethereum) {
@@ -135,7 +136,7 @@ const App = () => {
           Mint NFT
         </button>
         <div style={{marginTop: "15px"}}>
-          <a href="" blank="#">Check minted NFTs on Open Sea</a>
+          <a href={OPENSEA_LINK} target="_blank" rel='noreferrer'>Check minted NFTs on Open Sea</a>
         </div>
       </div>
       )
@@ -175,7 +176,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`built by @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>
