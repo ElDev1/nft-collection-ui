@@ -1,7 +1,7 @@
 
 # NFT Collection UI
 
-This repository is part of NFT collection project where users can connect with their Ethereum wallet and mint an NFT and see it later on Open Sea.
+This repository is part of NFT collection project where users can connect with their Ethereum wallet and mint an NFT to see it later on Open Sea.
 
 
 Here you have a simple user interface created with React to interact with the smart contract that creates the NFTs.
